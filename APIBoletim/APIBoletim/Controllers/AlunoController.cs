@@ -27,8 +27,9 @@ namespace APIBoletim.Controllers
 
         // POST: api/Aluno
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult Post([FromBody] string value)
         {
+            return Ok();
         }
 
         // PUT: api/Aluno/5
